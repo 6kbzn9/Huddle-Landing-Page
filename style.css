@@ -96,6 +96,45 @@ footer {
 
 @media screen and (min-width: 600px) {
   body {
-    background: url(images/bg-desktop.svg) var(--violet) no-repeat top left;
+    background: url(images/bg-desktop.svg) var(--violet) no-repeat center center;
+    background-size: contain;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .wrapper {
+    max-width: 1200px;
+  }
+  .main {
+    display: grid;
+    grid-template-columns: 2fr 1.75fr;
+    padding-bottom: 1.5rem;
+  }
+  .content {
+    text-align: start;
+
+    padding-left: 2rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .register {
+    display: inline-block;
+    padding: 0.75rem 4rem;
+  }
+  footer {
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .wrapper {
+    max-width: 1200px;
+  }
+  .main {
+    padding-bottom: 0;
+  }
+  .content {
+    padding-top: 2.5rem;
   }
 }
